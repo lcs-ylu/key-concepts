@@ -35,15 +35,22 @@ let lightRed = Color(hue: 4, saturation: 78, brightness: 92, alpha: 100)
 // HINT: Remember that all shapes have a fill and a border.
 //       You can turn off the fill or border if desired.
 
+//new elipse for canvas colour
+canvas.drawShapesWithBorders = false
+canvas.drawShapesWithFill = true
+canvas.fillColor =  Color.grey
+canvas.drawEllipse(at: Point(x: 200, y:200), width: 1000, height: 1000)
+
+
 // No border, has a fill
 canvas.drawShapesWithBorders = false
 canvas.drawShapesWithFill = true
-canvas.drawEllipse(at: Point(x: 100, y: 100), width: 50, height: 75)
+canvas.drawEllipse(at: Point(x: 200, y: 200), width: 200, height: 200)
 
 // Has a border, no fill
 canvas.drawShapesWithBorders = true
 canvas.drawShapesWithFill = false
-canvas.drawEllipse(at: Point(x: 200, y: 100), width: 50, height: 75)
+canvas.drawEllipse(at: Point(x: 350, y: 200), width: 200, height: 200)
 
 
 /*:

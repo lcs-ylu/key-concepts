@@ -19,7 +19,8 @@ canvas.fillColor = Color.blue
 canvas.drawEllipse(at: Point(x: 175, y: canvas.height / 2), width: 100, height: 100)
 canvas.fillColor = Color.red
 canvas.drawEllipse(at: Point(x: 225, y: canvas.height / 2), width: 100, height: 100)
-
+canvas.fillColor = Color.yellow
+canvas.drawEllipse(at: Point(x: 200, y: canvas.height / 3), width: 100, height: 100)
 /*:
  ## Notes
  The red circle overlaps the blue circle because the red circle is drawn after the blue circle. This is because the statement that draws the red circle (line 21) occurs after the statement that draws the blue circle (line 19).
