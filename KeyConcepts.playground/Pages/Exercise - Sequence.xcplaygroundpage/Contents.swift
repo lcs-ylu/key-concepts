@@ -38,21 +38,46 @@ let lightRed = Color(hue: 4, saturation: 78, brightness: 92, alpha: 100)
 //new elipse for canvas colour
 canvas.drawShapesWithBorders = false
 canvas.drawShapesWithFill = true
-canvas.fillColor =  Color.grey
+canvas.fillColor = grey
 canvas.drawEllipse(at: Point(x: 200, y:200), width: 1000, height: 1000)
 
 
 // No border, has a fill
-canvas.drawShapesWithBorders = false
-canvas.drawShapesWithFill = true
-canvas.drawEllipse(at: Point(x: 200, y: 200), width: 200, height: 200)
-
-// Has a border, no fill
 canvas.drawShapesWithBorders = true
 canvas.drawShapesWithFill = false
-canvas.drawEllipse(at: Point(x: 350, y: 200), width: 200, height: 200)
+canvas.borderColor=lightRed
+canvas.drawEllipse(at: Point(x: 200, y: 200), width: 275, height: 275, borderWidth: 100)
+
+// Has a border, no fill
+canvas.borderColor=lightBlue
+canvas.drawShapesWithBorders = true
+canvas.drawShapesWithFill = false
+canvas.drawEllipse(at: Point(x: 350, y: 200), width: 275, height: 275, borderWidth: 100)
 
 
+
+canvas.drawText(message: "the jesus", at: Point(x:10,y:440), size: 40, kerning: 0.75)
+canvas.drawText(message: "and mary chain", at: Point(x:10,y:395), size: 40, kerning: 0.75)
+
+canvas.drawText(message: "friday", at: Point(x:15, y:570), size: 10)
+canvas.drawText(message: "december 4 1987", at: Point(x:15, y:555), size: 10)
+canvas.drawText(message: "8 pm show", at: Point(x:15, y:540), size: 10)
+
+canvas.drawText(message: "with", at: Point(x:115, y:570), size: 10)
+canvas.drawText(message: "social distortion", at: Point(x:115, y:555), size: 10)
+canvas.drawText(message: "and opal", at: Point(x:115, y:540), size: 10)
+
+canvas.drawText(message: "hollywood palladium", at: Point(x:275, y:570), size: 10)
+canvas.drawText(message: "6215 sunset blvd.", at: Point(x:275, y:555), size: 10)
+canvas.drawText(message: "los angeles, california", at: Point(x:275, y:540), size: 10)
+
+for m in 1...7 {
+    canvas.drawLine(from: Point(x:m*50, y:0), to: Point(x:m*50, y: 600))
+}
+
+for n in 1...11 {
+    canvas.drawLine(from: Point(x:0,y:n*50), to: Point(x:400,y:n*50))
+}
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
